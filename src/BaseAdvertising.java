@@ -2,6 +2,14 @@ public class BaseAdvertising {
     private int id;
     private int clicks;
     private int views;
+
+    public BaseAdvertising() {
+    }
+
+    public BaseAdvertising(int id) {
+        this.id = id;
+    }
+
     public String describeMe(){
         String description = "this class is father of Ad and Advertiser classes.";
         return description;

@@ -1,11 +1,15 @@
 import java.util.ArrayList;
 
 public class Advertiser extends BaseAdvertising {
-    private int id;
+
     private String name;
-    private int clicks;
-    private int views;
+
     private static ArrayList<Advertiser> advertisers = new ArrayList<>();
+
+    public Advertiser(int id, String name) {
+        super(id);
+        this.name = name;
+    }
 
     public String getName() {
         return name;
