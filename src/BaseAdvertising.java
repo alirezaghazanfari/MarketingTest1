@@ -11,7 +11,7 @@ public class BaseAdvertising {
     }
 
     public String describeMe(){
-        String description = "this class is father of Ad and Advertiser classes.";
+        String description = "this class is father of Ad and Advertiser classes. I am BaseAdvertising Class";
         return description;
     }
 

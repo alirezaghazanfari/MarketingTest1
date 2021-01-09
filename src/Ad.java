@@ -46,8 +46,21 @@ public class Ad extends BaseAdvertising {
     }
 
     @Override
+    public void incClicks() {
+        super.incClicks();
+        advertiser.incClicks();
+    }
+
+    @Override
+    public void incViews() {
+        super.incViews();
+        advertiser.incViews();
+    }
+
+    @Override
     public String describeMe() {
-        return super.describeMe();
+        String description = "this is class of Ads:))";
+        return description;
     }
 
 }

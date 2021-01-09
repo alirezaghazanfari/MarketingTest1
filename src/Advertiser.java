@@ -21,13 +21,13 @@ public class Advertiser extends BaseAdvertising {
     }
 
     public static String help(){
-        String helpInfo = "id is unique number of advertiser ***\nname is advertiser's name ***\nclciks is number of its clicks ***\nviews is number of its views ***\n";
+        String helpInfo = "id is unique number of advertiser ***\nname is advertiser's name ***\nclciks is number of its clicks ***\nviews is number of its views ***";
         return helpInfo;
     }
 
     @Override
     public String describeMe() {
-        String classTask = "this class is implemented for advertisers and companies who want to advertise";
+        String classTask = "this class is implemented for advertisers and companies who want to advertise //// advertiser class";
         return classTask;
     }
 
