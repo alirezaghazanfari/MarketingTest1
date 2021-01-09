@@ -33,30 +33,52 @@ public class Ad extends BaseAdvertising {
         return link;
     }
 
+    /**
+     * this method set link of this ad
+     * @param link
+     */
     public void setLink(String link) {
         this.link = link;
     }
 
+    /**
+     * this method return an ad's advertiser
+     * @return
+     */
     public Advertiser getAdvertiser() {
         return advertiser;
     }
 
+    /**
+     * this method set advertiser of an ad
+     * @param advertiser
+     */
     public void setAdvertiser(Advertiser advertiser) {
         this.advertiser = advertiser;
     }
 
+    /**
+     * this method increment ad's clicks and its advertiser's clicks
+     */
     @Override
     public void incClicks() {
         super.incClicks();
         advertiser.incClicks();
     }
 
+    /**
+     * this method increment number of ad's views and its advertiser's views
+     */
     @Override
     public void incViews() {
         super.incViews();
         advertiser.incViews();
     }
 
+    /**
+     * this method is for identifying target of this class
+     * @return
+     */
     @Override
     public String describeMe() {
         String description = "this is class of Ads:))";
