@@ -9,6 +9,7 @@ public class Advertiser extends BaseAdvertising {
     public Advertiser(int id, String name) {
         super(id);
         this.name = name;
+        advertisers.add(this);
     }
 
     public String getName() {
@@ -19,7 +20,7 @@ public class Advertiser extends BaseAdvertising {
         this.name = name;
     }
 
-    public String help(){
+    public static String help(){
         String helpInfo = "id is unique number of advertiser ***\nname is advertiser's name ***\nclciks is number of its clicks ***\nviews is number of its views ***\n";
         return helpInfo;
     }
